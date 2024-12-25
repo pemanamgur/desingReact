@@ -1,0 +1,95 @@
+.hero{
+    display: flex;
+    margin: 0 auto;
+    max-width: 1280px;
+    align-items: center;
+    height: calc(100vh - 70px);
+}
+.hero h1{
+    font-weight: 800;
+    font-size: 115px;
+    line-height: 100px;
+}
+.hero p{
+    font-weight: 600;
+    color: var(--gray);
+}
+.hero-btn {
+     display: flex;
+     gap: 40px;
+}
+.hero-content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.secondary-btn{
+    color : var(--gray);
+    background-color: transparent;
+}
+.shopping p {
+  font-size: 12px;    
+  /* margin-bottom: 8px; */
+}
+.brand-icons{
+    display: flex;
+    gap: 18px;
+}
+.brand-icons img{
+    width: 50px;
+    border-radius: 50px;
+}
+.hero-image img{
+    height: 500px;
+}
+@media(max-width: 768px) {
+    .hero h1{
+    font-weight: 600;
+    font-size: 45px;
+    line-height: 60px;
+    }
+    .hero-image img{
+        height: 370px;
+        width: 271px;
+    }
+    /* nav{
+        max-width: 437px;
+    } */
+    .hero-btn {
+        gap: 16px;
+    }
+    .hero-content p {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 1024px) and (min-width: 768px) {
+    /* CSS rules for screens with width between 768px and 1024px */
+    .hero h1{
+        font-weight: 700;
+        font-size: 60px;
+        line-height: 65px;
+        }
+        .hero-image img{
+            height: 390px;
+            width: 271px;
+        }
+        .hero{
+            margin : 30px;
+        }
+       
+  }
+  @media (min-width : 1024px ) {
+    .hero h1{
+        font-weight: 800;
+        font-size: 70px;
+        line-height: 70px;
+        }
+        .hero-image img{
+            height: 450px;
+            width: 351px;
+        }
+        .hero{
+            margin : 40px;
+        }
+  }
